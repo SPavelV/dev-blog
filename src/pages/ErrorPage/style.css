@@ -1,0 +1,13 @@
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  margin-top: 34vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
