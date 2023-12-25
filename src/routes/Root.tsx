@@ -1,3 +1,5 @@
+import { Outlet, NavLink } from 'react-router-dom';
+
 export const Root = () => {
   return (
     <div className='root'>
@@ -5,24 +7,24 @@ export const Root = () => {
         <nav>
           <ul>
             <li>
-              <a href='' className='nav-link'>
+              <NavLink to='projects' className='nav-link'>
                 Проекты
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href='' className='nav-link'>
+              <NavLink to='thoughts' className='nav-link'>
                 Мысли
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href='' className='nav-link'>
+              <NavLink to='articles' className='nav-link'>
                 Статьи
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href='' className='nav-link'>
+              <NavLink to='contacts' className='nav-link'>
                 Связаться
-              </a>
+              </NavLink>
             </li>
           </ul>
         </nav>
@@ -31,7 +33,9 @@ export const Root = () => {
           <input type='text' className='search' />
         </section>
       </aside>
-      <div className='content'></div>
+      <div className='content'>
+        <Outlet />
+      </div>
     </div>
   );
 };

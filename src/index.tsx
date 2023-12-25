@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
-import { Root } from './routes/Root';
+import { Root, Projects, Contacts, Thoughts, Articles } from './routes';
 import { ErrorPage } from './pages';
 
 const router = createBrowserRouter([
@@ -9,6 +9,24 @@ const router = createBrowserRouter([
     path: '/',
     element: <Root />,
     errorElement: <ErrorPage />,
+    children: [
+      {
+        path: 'projects',
+        element: <Projects />,
+      },
+      {
+        path: 'contacts',
+        element: <Contacts />,
+      },
+      {
+        path: 'articles',
+        element: <Articles />,
+      },
+      {
+        path: 'thoughts',
+        element: <Thoughts />,
+      },
+    ],
   },
 ]);
 
