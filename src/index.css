@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('./assets/fonts/Roboto-mono/RobotoMono-Medium.woff2') format('woff2'),
+    url('./assets/fonts/Roboto-mono/RobotoMono-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rag';
+  src: url('./assets/fonts/Rag/Rag-Bold.woff2') format('woff2'),
+    url('./assets/fonts/Rag/Rag-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --text-heading-color: #252525;
+  --text-paragraph-color: #333333;
+  --text-link-color: #4b4b4b;
+  --bg-color: #fafaf8;
+  --card-bg-color: #f5f5f5;
+  --white: #fff;
+  --roboto-font-family: 'Roboto', 'Arial', sans-serif;
+  --rag-font-family: 'Rag', 'Arial', sans-serif;
+}
+
+body {
+  color: var(--text-paragraph-colo);
+  background-color: var(--bg-color);
+  font-family: var(--roboto-font-family);
+}
+
+a {
+  color: var(--text-link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--card-bg-color);
+  font-family: var(--rag-font-family);
+}
