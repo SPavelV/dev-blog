@@ -16,6 +16,10 @@
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --text-heading-color: #252525;
   --text-paragraph-color: #333333;
@@ -23,14 +27,16 @@
   --bg-color: #fafaf8;
   --card-bg-color: #f5f5f5;
   --white: #fff;
-  --roboto-font-family: 'Roboto', 'Arial', sans-serif;
-  --rag-font-family: 'Rag', 'Arial', sans-serif;
+  --roboto-font-family: 'Roboto Mono', 'Arial', sans-serif;
+  --rag-font-family: 'Rag', 'Verdana', monospace;
 }
 
 body {
   color: var(--text-paragraph-colo);
   background-color: var(--bg-color);
   font-family: var(--roboto-font-family);
+  font-size: 16px;
+  line-height: 28px;
 }
 
 a {
@@ -48,6 +54,21 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--card-bg-color);
+  color: var(--text-heading-color);
   font-family: var(--rag-font-family);
+}
+
+h1 {
+  font-size: 30px;
+  letter-spacing: -1.5px;
+}
+
+.root {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  flex: 0 1 600px;
+  padding: 0 32px;
 }

@@ -1,0 +1,38 @@
+.intro {
+  margin: 0 0 30px;
+}
+
+.intro-in {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.image {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 29.16667%;
+  height: auto;
+  margin-bottom: 32px;
+}
+
+.intro-in .image {
+  width: 16.1667%;
+  margin-bottom: 0;
+  margin-right: 15px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.intro-in .title {
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+.caption {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
