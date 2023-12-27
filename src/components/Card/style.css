@@ -1,0 +1,27 @@
+.card {
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: var(--card-bg-color);
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.head h2 {
+  margin-bottom: 0;
+}
+
+.description {
+  margin-bottom: 8px;
+}
+
+.date {
+  padding: 3px;
+  border-radius: 8px;
+  background-color: var(--white);
+}

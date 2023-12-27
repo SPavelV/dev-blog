@@ -14,6 +14,7 @@
   width: 29.16667%;
   height: auto;
   margin-bottom: 32px;
+  transition: all 300ms;
 }
 
 .intro-in .image {

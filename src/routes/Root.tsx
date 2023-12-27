@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import { Aside, Intro } from '../components';
+import { Aside, Intro, Card } from '../components';
 
 export const Root = () => {
   return (
@@ -7,6 +7,13 @@ export const Root = () => {
       <Aside />
       <div className='content'>
         <Intro />
+        <Card
+          title='Заголовок'
+          link='/projects'
+          linkText='ссылка на полное описание'
+          description='Описание проекта. Описание проекта. Описание проекта. Описание проекта.'
+          date='2023-12-27 22:18'
+        />
         <Outlet />
       </div>
     </div>
