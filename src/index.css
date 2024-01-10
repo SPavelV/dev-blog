@@ -63,6 +63,10 @@ h1 {
   letter-spacing: -1.5px;
 }
 
+h2 {
+  font-size: 32px;
+}
+
 .root {
   display: flex;
   justify-content: center;

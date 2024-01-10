@@ -6,7 +6,7 @@ interface CardProps {
   title: string;
   date: string;
   link: string;
-  linkText?: string;
+  linkText: string;
   description?: string;
 }
 
@@ -14,17 +14,19 @@ export const Card = ({
   title,
   date = '2023-12-27 19:18',
   link,
-  linkText = 'Подробнее',
+  linkText,
   description,
 }: CardProps) => {
   return (
     <section className='card'>
       <div className='head'>
         <h2>{title}</h2>
-        <time className='date' dateTime={date}>{dayjs(date).format('YYYY')}</time>
+        <time className='date' dateTime={date}>
+          {dayjs(date).format('YYYY')}
+        </time>
       </div>
       <p className='description'>{description}</p>
-      <Link to={link}>{linkText} →</Link>
+      <Link to={link}>{linkText && linkText} →</Link>
     </section>
   );
 };

@@ -1,0 +1,1 @@
+export { ThoughtCard } from './ThoughtsCard';
