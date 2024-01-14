@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './style.css';
+import styles from './sectionTitle.module.css';
 
 interface SectionTitleProps {
   title?: string;
@@ -14,8 +14,8 @@ export const SectionTitle = ({
 }: SectionTitleProps) => {
   if (!title && !link) return null;
   return (
-    <div className='section-title'>
-      <h3>{title}</h3>
+    <div className={styles.sectionTitle}>
+      <h2>{title}</h2>
       {link && linkText && <Link to={link}>{linkText}</Link>}
     </div>
   );

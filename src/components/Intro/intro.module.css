@@ -2,7 +2,7 @@
   margin: 0 0 30px;
 }
 
-.intro-in {
+.introIn {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -17,7 +17,7 @@
   transition: all 300ms;
 }
 
-.intro-in .image {
+.introIn .image {
   width: 16.1667%;
   margin-bottom: 0;
   margin-right: 15px;
@@ -28,7 +28,7 @@
   margin-bottom: 32px;
 }
 
-.intro-in .title {
+.introIn .title {
   margin-bottom: 0;
   font-size: 24px;
 }

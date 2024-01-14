@@ -1,0 +1,14 @@
+.thoughtCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--roboto-font-family);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+}

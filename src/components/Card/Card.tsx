@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './style.css';
+import styles from './card.module.css';
 import dayjs from 'dayjs';
 
 interface CardProps {
@@ -18,14 +18,14 @@ export const Card = ({
   description,
 }: CardProps) => {
   return (
-    <section className='card'>
-      <div className='head'>
-        <h2>{title}</h2>
-        <time className='date' dateTime={date}>
+    <section className={styles.card}>
+      <div className={styles.head}>
+        <h3 className={styles.title}>{title}</h3>
+        <time className={styles.date} dateTime={date}>
           {dayjs(date).format('YYYY')}
         </time>
       </div>
-      <p className='description'>{description}</p>
+      <p className={styles.description}>{description}</p>
       <Link to={link}>{linkText && linkText} →</Link>
     </section>
   );

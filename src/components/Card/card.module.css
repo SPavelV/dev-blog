@@ -12,6 +12,10 @@
   margin-bottom: 8px;
 }
 
+.title {
+  margin: 0;
+}
+
 .head h2 {
   margin-bottom: 0;
 }

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './style.css';
+import styles from './thoughtCard.module.css';
 
 interface ThoughtCardProps {
   title: string;
@@ -13,8 +13,8 @@ export const ThoughtCard = ({
   linkText = 'Читать',
 }: ThoughtCardProps) => {
   return (
-    <section className='thought-card'>
-      <h3 className='title'>{title}</h3>
+    <section className={styles.thoughtCard}>
+      <h3 className={styles.title}>{title}</h3>
       <Link to={link}>{linkText} →</Link>
     </section>
   );
