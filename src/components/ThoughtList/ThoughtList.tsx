@@ -1,7 +1,7 @@
 import { SectionTitle, ThoughtCard } from '../';
 import styles from './thoughtList.module.css';
 
-interface Thoughts {
+interface Thought {
   id: number;
   title: string;
 }
@@ -28,9 +28,9 @@ export const ThoughtList = () => {
 
       {!!mockData.length && (
         <ul className={styles.list}>
-          {mockData.map(({ id, title }: Thoughts) => (
-            <li className={styles.item}>
-              <ThoughtCard title={title} key={id} link={`/${id}`} />
+          {mockData.map(({ id, title }: Thought) => (
+            <li className={styles.item} key={id}>
+              <ThoughtCard title={title} link={`/${id}`} />
             </li>
           ))}
         </ul>

@@ -6,8 +6,8 @@ interface CardProps {
   title: string;
   date: string;
   link: string;
-  linkText: string;
-  description?: string;
+  linkText?: string;
+  subtitle?: string;
 }
 
 export const Card = ({
@@ -15,7 +15,7 @@ export const Card = ({
   date = '2023-12-27 19:18',
   link,
   linkText,
-  description,
+  subtitle: description,
 }: CardProps) => {
   return (
     <section className={styles.card}>
@@ -26,7 +26,7 @@ export const Card = ({
         </time>
       </div>
       <p className={styles.description}>{description}</p>
-      <Link to={link}>{linkText && linkText} →</Link>
+      <Link to={link}>{linkText ? linkText : link} →</Link>
     </section>
   );
 };

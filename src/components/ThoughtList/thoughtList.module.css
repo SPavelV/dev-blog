@@ -1,7 +1,3 @@
-.thoughtList {
-
-}
-
 .list {
   margin: 0;
   padding: 0;
@@ -15,5 +11,5 @@
 }
 
 .item:last-child {
-  border-bottom:1px solid var(--text-paragraph-color);
+  border-bottom: 1px solid var(--text-paragraph-color);
 }
